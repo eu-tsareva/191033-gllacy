@@ -1,10 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: #9bafa4;
+  /*background: #9bafa4;*/
   font: normal 16px/22px Roboto, Verdana, sans-serif;
   color: #ffffff;
 }
 
 h1, h2 {
+  margin-bottom: 25px;
   font: bold 35px/41px Roboto, Arial, sans-serif;
   color: #ffffff;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 27px;
+}
+
+.main-header {
+  margin-bottom: 28px;
+}
+
+.header-menu {
+  float: left;
+  width: 853px;
+}
+
+.header-logo {
+  display: inline-block;
+}
+
+.user-block {
+  float: right;
+  width: 267px;
+}
+
+.header-contacts {
+  position: absolute;
+  /*for grid demonstration*/
+  bottom: -60px;
+  right: 27px;
+}
+
+.header-contacts span {
+  display: block;
+}
+
+.slider {
+  position: relative;
+  text-align: center;
+}
+
+.slider-block {
+  width: 100%;
+  height: 584px;
+}
+
+.slider-block-item {
+  position: relative;
+  width: 675px;
+  height: 584px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-block-item img {
+  width: 647px;
+  height: 584px;
+}
+
+.slider-name {
+  position: absolute;
+  top: 314px;
+  display: block;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 460px;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 280px;
+  margin: auto;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 0;
+  top: 480px;
+}
+
+.index-content-block {
+  margin-bottom: 40px;
+}
+
+.content-block-left {
+  float: left;
+  width: 560px;
+}
+
+.content-block-right {
+  float: right;
+  width: 560px;
+}
+
+.promo-block {
+  box-sizing: border-box;
+  /*width: 520px;*/
+  height: 229px;
+  padding: 20px;
+  padding-bottom: 23px;
+}
+
+.promo-btn {
+  float: right;
+  display: block;
+  width: 165px;
+  margin-top: 45px;
+}
+
+.catalog-table {
+  margin-bottom: 40px;
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 267px;
+  margin-right: 26px;
+  font-size: 16px;
+  line-height: 22px;
+  vertical-align: top;
+}
+
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item-img {
+  border-radius: 50%;
+  width: 267px;
+  height: 267px;
+  overflow: hidden;
+}
+
+.catalog-item-img img {
+  width: 267px;
+  height: 267px;
+}
+
+.catalog-item-price,
+.catalog-item-description {
+  display: block;
+}
+
+.catalog-item-description {
+  text-align: center;
+}
+
+.features {
+  margin-bottom: 40px;
+  padding: 28px 20px;
+}
+
+.features-title {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.features-block-left {
+  float: left;
+  width: 540px;
+}
+
+.features-block-right {
+  float: right;
+  width: 540px;
+}
+
+.blog-block,
+.subscribe-block {
+  box-sizing: border-box;
+  height: 220px;
+}
+
+.blog-block {
+  padding: 25px 19px;
+}
+
+.subscribe-block {
+  padding: 35px 28px;
+  padding-bottom: 40px;
+}
+
+.subscribe-form {
+  margin-top: 40px;
+}
+
+.map {
+
+}
+
+.map-img {
+  position: relative;
+  width: 1200px;
+  height: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-feedback-block {
+  position: absolute;
+  right: 27px;
+  top: 62px;
+  width: 252px;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-social {
+  float: left;
+  width: 267px;
+  margin-right: 26px;
+  margin-top: 15px;
+}
+
+.footer-info {
+  float: left;
+  width: 560px;
+  margin-right: 26px;
+  margin-top: 15px;
+}
+
+.footer-info-left {
+  float: left;
+  width: 240px;
+}
+
+.footer-info-right {
+  float: right;
+  width: 293px;
+}
+
+.footer-info a {
+  display: block;
+}
+
+.footer-copyright {
+  float: right;
+  width: 267px;
+}
+
+
+/*grid demonstration*/
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+body * {
+  /*background: rgba(234, 255, 45, 0.2);*/
+  box-shadow: inset 0 0 0 1px blue;
 }
