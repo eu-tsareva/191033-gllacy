@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.562" height="13.66" viewBox="0 0 15.562 13.66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f8f8;
+        stroke: #b2b2b2;
+        stroke-linejoin: round;
+        stroke-opacity: 0.52;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Сердце" class="cls-1" d="M434.606,2362.73s7.285-3.6,7.285-8.22c0-5.13-5.5-5.94-7.3-1.71m0.049,9.93s-7.285-3.6-7.285-8.22c0-5.13,5.5-5.94,7.3-1.71" transform="translate(-426.844 -2349.56)"/>
+</svg>
