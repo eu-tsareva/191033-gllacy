@@ -194,6 +194,11 @@ a:active {
   top: -13px;
 }
 
+.header-logo img {
+  width: 154px;
+  height: 64px;
+}
+
 .header-logo a,
 .header-logo a:hover,
 .header-logo a:active {
@@ -307,7 +312,6 @@ a:active {
 
 .sub-menu li:first-child a {
   font-weight: 700;
-  /*border-bottom: 1px #d1d0ce solid;*/
 }
 
 .sub-menu a:hover {
@@ -1254,19 +1258,29 @@ a:active {
 }
 
 .filter-form-item .sort-by-controls {
-  padding-left: 4px;
-  padding-right: 14px;
-}
 
-.sort-by-controls select{
-  width: 176px;
+  /*padding-left: 4px;
+  padding-right: 14px;*/
+}
+.sort-by-controls select {
+  /*width: 176px;*/
+  width: 163px;
 
   font: inherit;
 
   border: none;
   outline: none;
   color: #ffffff;
-  background: transparent;
+  background: transparent url("../img/arrow.svg") right no-repeat;
+
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+}
+
+.sort-by-controls select::-ms-expand {
+    display: none;
 }
 
 .sort-by-controls:hover {
@@ -1275,6 +1289,7 @@ a:active {
 
 .sort-by-controls:hover select {
   color: #323232;
+  background: transparent url("../img/arrow-hover.svg") right no-repeat;
 }
 
 .range-scale {
@@ -1677,25 +1692,27 @@ a:active {
 
 .social-btn {
   display: inline-block;
-  width: 31.374px;
-  height: 31.4px;
-  margin-right: 8px;
+  width: 31px;
+  height: 31px;
+  margin-right: 11px;
+  margin-left: 3px;
 
   font-size: 0;
   vertical-align: top;
 
   opacity: 0.8;
-  border: 3px rgba(255, 255, 255, 0.5) solid;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
 
 .social-btn:hover {
   opacity: 1;
-  border: 4px rgba(255, 255, 255, 0.71) solid;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.71);
 }
 
 .social-btn:active {
-  box-shadow: inset 0 2px 1px #888888;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5),
+              inset 0 2px 1px #888888;
 }
 
 .social-btn-tw {
@@ -1756,8 +1773,8 @@ a:active {
   top: 50%;
   left: -20px;
 
-  width: 15.562px;
-  height: 13.66px;
+  width: 16px;
+  height: 14px;
   margin-top: -6px;
 
   background: url("../img/heart.svg");
@@ -1773,8 +1790,8 @@ a:active {
 }
 
 .footer-copyright-logo img {
-  width: 107.622px;
-  height: 36.69px;
+  width: 108px;
+  height: 37px;
 }
 
 .footer-copyright p,
