@@ -36,7 +36,7 @@
             <div class="controls controls-search">
               <div class="search-block">
                 <div class="label-wrapper">
-                  <input class="text-field" type="search" name="search" required>
+                  <input class="text-field" type="search" name="search">
                   <label class="label-hint">Что ищем?</label>
                 </div>
               </div>
@@ -45,11 +45,11 @@
               Вход
               <form class="login-form clearfix" action="https://echo.htmlacademy.ru" method="post">
                 <div class="label-wrapper">
-                  <input class="text-field" type="text" name="log-email" required>
+                  <input class="text-field" type="email" name="log-email">
                   <label class="label-hint">Электронная почта</label>
                 </div>
                 <div class="label-wrapper">
-                  <input class="text-field" type="password" name="password" required>
+                  <input class="text-field" type="password" name="password">
                   <label class="label-hint">Пароль</label>
                 </div>
                 <button class="btn" type="submit">Войти</button>
@@ -189,7 +189,7 @@
                 </p>
                 <form class="subscribe-form clearfix" action="#" method="get">
                   <div class="label-wrapper">
-                    <input class="text-field" type="text" name="sb-email" required="">
+                    <input class="text-field" type="email" name="sb-email">
                     <label class="label-hint">Электронная почта</label>
                   </div>
                   <button class="btn subscribe-btn" type="submit">Отправить</button>
@@ -200,7 +200,8 @@
         </div>
         <div class="map">
           <div class="map-container">
-            <img src="img/map.jpg" width="1200" height="430" alt="">
+            <!-- <img src="img/map.jpg" width="1200" height="430" alt=""> -->
+            <div id="yandex-map"></div>
             <div class="map-feedback-block">
               <p>
                 Адрес главного офиса и<br> офлайн магазина:<br>
@@ -249,20 +250,24 @@
       <span class="modal-content-title">Мы обязательно вам ответим!</span>
       <form class="feedback-form" method="post" action="#">
         <div class="label-wrapper">
-          <input class="text-field" type="text" name="name" required>
+          <input class="text-field" type="text" name="name">
           <label class="label-hint">Как вас зовут?</label>
         </div>
         <div class="label-wrapper">
-          <input class="text-field" type="text" name="email" required>
+          <input class="text-field" type="email" name="email">
           <label class="label-hint">Ваша почта для ответа?</label>
         </div>
         <div class="label-wrapper">
-          <textarea class="text-field" name="name" required></textarea>
+          <textarea class="text-field" name="text"></textarea>
           <label class="label-hint">Напишите что-нибудь...</label>
         </div>
         <button class="btn send-btn" type="submit">Отправить</button>
       </form>
     </div>
-
+    <script src="js/placeholders.js"></script>
+    <script src="js/feedback-popup.js"></script>
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ovc3Y-OgDHUysdDCdl5LDVXOQGQjyQht&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map&amp;scroll=true">
+    </script>
   </body>
 </html>
