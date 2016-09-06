@@ -1,0 +1,1 @@
+var inputs=Array.from(document.querySelectorAll(".label-wrapper"));inputs.forEach(function(a){var b=a.querySelector(".text-field");a.querySelector(".label-hint");b.classList.remove("valid"),b.addEventListener("blur",function(a){b.value?b.classList.add("valid"):b.classList.contains("valid")&&b.classList.remove("valid")})});

@@ -5,7 +5,7 @@
     <title>Gllacy Shop</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body class="index-page">
     <input class="slider-radio" type="radio" name="toggle" id="slider-radio-1" checked>
@@ -19,47 +19,47 @@
               <img src="img/main-logo.svg" width="154" height="64" alt="Gllacy Shop">
             </div>
             <ul class="main-menu">
-              <li><a href="#">Каталог</a>
+              <li><a class="white-general" href="#">Каталог</a>
                   <ul class="sub-menu">
-                    <li><a href="#">Новинки</a><hr></li>
+                    <li><a class="white-general" href="#">Новинки</a><hr></li>
                     <li><a href="catalog.html">Сливочное</a></li>
                     <li><a href="#">Щербеты</a></li>
                     <li><a href="#">Фруктовый лед</a></li>
                     <li><a href="#">Мелорин</a></li>
                   </ul>
               </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
+              <li><a class="white-general" href="#">Доставка и оплата</a></li>
+              <li><a class="white-general" href="#">О Компании</a></li>
             </ul>
           </nav>
           <div class="user-block">
-            <div class="controls controls-search">
-              <div class="search-block">
+            <div class="controls user-block-controls controls-search">
+              <div class="user-block-hidden search-block">
                 <div class="label-wrapper">
-                  <input class="text-field" type="search" name="search">
+                  <input class="text-field valid" type="search" name="search">
                   <label class="label-hint">Что ищем?</label>
                 </div>
               </div>
             </div>
-            <div class="controls controls-login">
+            <div class="controls user-block-controls controls-login">
               Вход
-              <form class="login-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+              <form class="user-block-hidden login-form clearfix" action="https://echo.htmlacademy.ru" method="post">
                 <div class="label-wrapper">
-                  <input class="text-field" type="email" name="log-email">
+                  <input class="text-field valid" type="email" name="log-email">
                   <label class="label-hint">Электронная почта</label>
                 </div>
                 <div class="label-wrapper">
-                  <input class="text-field" type="password" name="password">
+                  <input class="text-field valid" type="password" name="password">
                   <label class="label-hint">Пароль</label>
                 </div>
                 <button class="btn" type="submit">Войти</button>
                 <div class="login-details-block">
-                  <a class="login-details" href="#">Забыли пароль?</a>
-                  <a class="login-details" href="#">Новая регистрация</a>
+                  <a class="login-details black-general" href="#">Забыли пароль?</a>
+                  <a class="login-details black-general" href="#">Новая регистрация</a>
                 </div>
               </form>
             </div>
-            <div class="controls controls-cart cart-empty">
+            <div class="controls user-block-controls controls-cart cart-empty">
               <span>Пусто</span>
             </div>
           </div>
@@ -74,16 +74,25 @@
           <div class="container">
             <div class="slider">
               <div class="slider-slides">
-                <span class="slides-item" id="slide-1">Крем-брюле и пломбир с малиновым джемом</span>
-                <span class="slides-item" id="slide-2">Шоколадный пломбир и лимонный сорбет</span>
-                <span class="slides-item" id="slide-3">Пломбир с помадкой и клубничный щербет</span>
+                <div class="slides-item" id="slide-1">
+                  <span>Крем-брюле и пломбир с малиновым джемом</span>
+                  <a class="btn slider-btn" href="#">Давайте оба!</a>
+                </div>
+                <div class="slides-item" id="slide-2">
+                  <span>Шоколадный пломбир и лимонный сорбет</span>
+                  <a class="btn slider-btn" href="#">Давайте оба!</a>
+                </div>
+                <div class="slides-item" id="slide-3">
+                  <span>Пломбир с помадкой и клубничный щербет</span>
+                  <a class="btn slider-btn" href="#">Давайте оба!</a>
+                </div>
               </div>
               <div class="slider-controls">
                 <label for="slider-radio-1"></label>
                 <label for="slider-radio-2"></label>
                 <label for="slider-radio-3"></label>
               </div>
-              <a class="btn slider-btn" href="#">Давайте оба!</a>
+
             </div>
             <div class="index-content-block clearfix">
               <div class="content-block-left promo-block">
@@ -178,7 +187,7 @@
               <div class="content-block-left blog-block">
                 <span class="blog-title">Новое в нашем блоге</span>
                 <div class="blog-posts">
-                  <a href="#">10 &nbsp;способов сервировки фруктовых щербетов<br> к столу</a>
+                  <a class="black-general" href="#">10 &nbsp;способов сервировки фруктовых щербетов<br> к столу</a>
                 </div>
               </div>
               <div class="content-block-right subscribe-block">
@@ -189,7 +198,7 @@
                 </p>
                 <form class="subscribe-form clearfix" action="#" method="get">
                   <div class="label-wrapper">
-                    <input class="text-field" type="email" name="sb-email">
+                    <input class="text-field valid" type="email" name="sb-email">
                     <label class="label-hint">Электронная почта</label>
                   </div>
                   <button class="btn subscribe-btn" type="submit">Отправить</button>
@@ -199,9 +208,8 @@
           </div>
         </div>
         <div class="map">
-          <div class="map-container">
-            <!-- <img src="img/map.jpg" width="1200" height="430" alt=""> -->
-            <div id="yandex-map"></div>
+          <div id="yandex-map"></div>
+          <div class="map-window">
             <div class="map-feedback-block">
               <p>
                 Адрес главного офиса и<br> офлайн магазина:<br>
@@ -212,7 +220,7 @@
                 <b class="feedback-telephone">8 812 450-25-25</b>
                 (с 10 до 20 ежедневно)
               </p>
-              <a class="btn feedback-btn" href="#">Форма обратной связи</a>
+              <a class="btn feedback-btn" href="feedback.html">Форма обратной связи</a>
             </div>
           </div>
         </div>
@@ -227,19 +235,19 @@
           </section>
           <section class="footer-info clearfix">
             <div class="footer-info-left">
-              <p class="footer-info-providers"><a href="#">Для поставщиков</a></p>
-              <p><a href="#">О производстве</a></p>
+              <p class="footer-info-providers"><a class="white-general" href="#">Для поставщиков</a></p>
+              <p><a class="white-general" href="#">О производстве</a></p>
             </div>
             <div class="footer-info-right">
-              <p><a href="#">Наши документы</a></p>
-              <p><a href="#">Экологические стандарты</a></p>
+              <p><a class="white-general" href="#">Наши документы</a></p>
+              <p><a class="white-general" href="#">Экологические стандарты</a></p>
             </div>
           </section>
           <section class="footer-copyright">
             <a class="footer-copyright-logo" href="https://htmlacademy.ru">
-              <img src="img/copyright-logo.svg" width="108" height="37" alt="">
+              <img src="img/copyright-logo.svg" width="108" height="37" alt="HTML Academy">
             </a>
-            <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+            <p>Сделано в <a class="white-general" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
           </section>
         </div>
       </footer>
@@ -250,24 +258,24 @@
       <span class="modal-content-title">Мы обязательно вам ответим!</span>
       <form class="feedback-form" method="post" action="#">
         <div class="label-wrapper">
-          <input class="text-field" type="text" name="name">
+          <input class="text-field valid" type="text" name="name">
           <label class="label-hint">Как вас зовут?</label>
         </div>
         <div class="label-wrapper">
-          <input class="text-field" type="email" name="email">
+          <input class="text-field valid" type="email" name="email">
           <label class="label-hint">Ваша почта для ответа?</label>
         </div>
         <div class="label-wrapper">
-          <textarea class="text-field" name="text"></textarea>
+          <textarea class="text-field valid" name="text"></textarea>
           <label class="label-hint">Напишите что-нибудь...</label>
         </div>
         <button class="btn send-btn" type="submit">Отправить</button>
       </form>
     </div>
-    <script src="js/placeholders.js"></script>
-    <script src="js/feedback-popup.js"></script>
+    <script src="js/placeholders-min.js"></script>
+    <script src="js/feedback-popup-min.js"></script>
     <script type="text/javascript" charset="utf-8" async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ovc3Y-OgDHUysdDCdl5LDVXOQGQjyQht&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map&amp;scroll=true">
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ovc3Y-OgDHUysdDCdl5LDVXOQGQjyQht&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map&amp;scroll=true">
     </script>
   </body>
 </html>

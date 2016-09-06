@@ -5,7 +5,7 @@
     <title>Каталог. Gllacy Shop </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -17,7 +17,7 @@
             </a>
           </div>
           <ul class="main-menu">
-            <li class="active"><a href="#">Каталог</a>
+            <li class="active"><a class="white-general" href="#">Каталог</a>
                 <ul class="sub-menu">
                   <li><a href="#">Новинки</a><hr></li>
                   <li class="active">Сливочное</li>
@@ -26,40 +26,40 @@
                   <li><a href="#">Мелорин</a></li>
                 </ul>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
+            <li><a class="white-general" href="#">Доставка и оплата</a></li>
+            <li><a class="white-general" href="#">О Компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
-          <div class="controls controls-search">
-            <div class="search-block">
+          <div class="controls user-block-controls controls-search">
+            <div class="user-block-hidden search-block">
               <div class="label-wrapper">
-                <input class="text-field" type="search" name="search">
+                <input class="text-field valid" type="search" name="search">
                 <label class="label-hint">Что ищем?</label>
               </div>
             </div>
           </div>
-          <div class="controls controls-login">
+          <div class="controls user-block-controls controls-login">
             Вход
-            <form class="login-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+            <form class="login-form user-block-hidden  clearfix" action="https://echo.htmlacademy.ru" method="post">
               <div class="label-wrapper">
-                <input class="text-field" type="email" name="log-email">
+                <input class="text-field valid" type="email" name="log-email">
                 <label class="label-hint">Электронная почта</label>
               </div>
               <div class="label-wrapper">
-                <input class="text-field" type="password" name="password">
+                <input class="text-field valid" type="password" name="password">
                 <label class="label-hint">Пароль</label>
               </div>
               <button class="btn" type="submit">Войти</button>
               <div class="login-details-block">
-                <a class="login-details" href="#">Забыли пароль?</a>
-                <a class="login-details" href="#">Новая регистрация</a>
+                <a class="login-details black-general" href="#">Забыли пароль?</a>
+                <a class="login-details black-general" href="#">Новая регистрация</a>
               </div>
             </form>
           </div>
-          <div class="controls controls-cart cart-full">
+          <div class="controls user-block-controls controls-cart cart-full">
             <span>2 товара</span>
-            <div class="cart">
+            <div class="user-block-hidden cart">
               <table class="cart-entry">
                 <tr>
                   <td><button class="cart-item-delete" type="button">Удалить</button></td>
@@ -76,7 +76,6 @@
                   <td>450 руб.</td>
                 </tr>
               </table>
-              <!-- <hr> -->
               <span class="cart-final-price">Итого: 750 руб.</span>
               <a class="btn order-btn" href="#">Оформить заказ</a>
             </div>
@@ -92,8 +91,8 @@
       <div class="container clearfix">
         <div class="breadcrumbs">
           <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a class="white-general" href="index.html">Главная</a></li>
+            <li><a class="white-general" href="#">Каталог</a></li>
             <li class="breadcrums-active">Сливочное</li>
           </ul>
         </div>
@@ -102,7 +101,7 @@
           <fieldset class="filter-form-row">
             <div class="filter-form-item">
               <span>Сортировка:</span>
-              <div class="controls sort-by-controls">
+              <div class="controls filter-controls sort-by-controls">
                 <select  name="sort-by" id="sort-by-select">
                   <option value="popular" selected>по популярности</option>
                   <option value="cheap">сначала недорогие</option>
@@ -112,8 +111,8 @@
               </div>
             </div>
             <div class="filter-form-item">
-              <span>Цена: 100 руб. - 500 руб.</span>
-              <div class="controls price-controls">
+              <span>Цена: 100 руб. – 500 руб.</span>
+              <div class="controls filter-controls price-controls">
                 <div class="range-scale">
                   <div class="range-scale-selected">
                     <div class="range-btn range-btn-left"></div>
@@ -125,7 +124,7 @@
             </div>
             <div class="filter-form-item">
               <span>Жирность:</span>
-              <div class="controls fat-controls">
+              <div class="controls filter-controls fat-controls">
                 <input type="radio" name="fat" id="fat-field-0" value="0"><label for="fat-field-0">0%</label>
                 <input type="radio" name="fat" id="fat-field-10" value="10" checked><label for="fat-field-10">до 10%</label>
                 <input type="radio" name="fat" id="fat-field-30" value="30"><label for="fat-field-30">до 30%</label>
@@ -136,7 +135,7 @@
           <fieldset class="filter-form-row">
             <div class="filter-form-item">
               <span>Наполнители:</span>
-              <div class="controls topping-controls">
+              <div class="controls filter-controls topping-controls">
                 <input type="checkbox" name="chocolate" id="chocolate-checkbox" checked><label for="chocolate-checkbox">шоколадные</label>
                 <input type="checkbox" name="sugar" id="sugar-checkbox" checked><label for="sugar-checkbox">сахарные присыпки</label>
                 <input type="checkbox" name="fruit" id="fruit-checkbox"><label for="fruit-checkbox">фрукты</label>
@@ -145,7 +144,7 @@
               </div>
             </div>
             <div class="filter-form-item">
-              <button class="controls filter-btn-controls" type="button">Применить</button>
+              <button class="controls filter-controls filter-btn-controls" type="button">Применить</button>
             </div>
           </fieldset>
         </form>
@@ -273,13 +272,13 @@
             </div>
           </div>
           <div class="catalog-paginator">
-              <a class="paginator-prev disabled" href="#"></a>
-              <a class="active" href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-              <a class="paginator-next" href="#">Вперёд</a>
+              <a class="white-general paginator-prev disabled" href="#"></a>
+              <a class="white-general active">1</a>
+              <a class="white-general" href="#">2</a>
+              <a class="white-general" href="#">3</a>
+              <a class="white-general" href="#">4</a>
+              <a class="white-general" href="#">5</a>
+              <a class="white-general paginator-next" href="#">Вперёд</a>
           </div>
         </div>
       </div>
@@ -294,22 +293,22 @@
         </section>
         <section class="footer-info clearfix">
           <div class="footer-info-left">
-            <p class="footer-info-providers"><a href="#">Для поставщиков</a></p>
-            <p><a href="#">О производстве</a></p>
+            <p class="footer-info-providers"><a class="white-general" href="#">Для поставщиков</a></p>
+            <p><a class="white-general" href="#">О производстве</a></p>
           </div>
           <div class="footer-info-right">
-            <p><a href="#">Наши документы</a></p>
-            <p><a href="#">Экологические стандарты</a></p>
+            <p><a class="white-general" href="#">Наши документы</a></p>
+            <p><a class="white-general" href="#">Экологические стандарты</a></p>
           </div>
         </section>
         <section class="footer-copyright">
           <a class="footer-copyright-logo" href="https://htmlacademy.ru">
-            <img src="img/copyright-logo.svg" width="108" height="37" alt="">
+            <img src="img/copyright-logo.svg" width="108" height="37" alt="HTML Academy">
           </a>
-          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+          <p>Сделано в <a class="white-general" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
         </section>
       </div>
     </footer>
-    <script src="js/placeholders.js"></script>
+    <script src="js/placeholders-min.js"></script>
   </body>
 </html>
