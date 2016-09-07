@@ -18,6 +18,7 @@
           </div>
           <ul class="main-menu">
             <li class="active"><a class="white-general" href="#">Каталог</a>
+              <div class="wrap-sub-menu">
                 <ul class="sub-menu">
                   <li><a href="#">Новинки</a><hr></li>
                   <li class="active">Сливочное</li>
@@ -25,6 +26,7 @@
                   <li><a href="#">Фруктовый лед</a></li>
                   <li><a href="#">Мелорин</a></li>
                 </ul>
+              </div>
             </li>
             <li><a class="white-general" href="#">Доставка и оплата</a></li>
             <li><a class="white-general" href="#">О Компании</a></li>
@@ -32,52 +34,58 @@
         </nav>
         <div class="user-block">
           <div class="controls user-block-controls controls-search">
-            <div class="user-block-hidden search-block">
-              <div class="label-wrapper">
-                <input class="text-field valid" type="search" name="search">
-                <label class="label-hint">Что ищем?</label>
+            <div class="wrap-user-block">
+              <div class="user-block-hidden search-block">
+                <div class="label-wrapper">
+                  <input class="text-field valid" type="search" name="search">
+                  <label class="label-hint">Что ищем?</label>
+                </div>
               </div>
             </div>
           </div>
           <div class="controls user-block-controls controls-login">
             Вход
-            <form class="login-form user-block-hidden  clearfix" action="https://echo.htmlacademy.ru" method="post">
-              <div class="label-wrapper">
-                <input class="text-field valid" type="email" name="log-email">
-                <label class="label-hint">Электронная почта</label>
-              </div>
-              <div class="label-wrapper">
-                <input class="text-field valid" type="password" name="password">
-                <label class="label-hint">Пароль</label>
-              </div>
-              <button class="btn" type="submit">Войти</button>
-              <div class="login-details-block">
-                <a class="login-details black-general" href="#">Забыли пароль?</a>
-                <a class="login-details black-general" href="#">Новая регистрация</a>
-              </div>
-            </form>
+            <div class="wrap-user-block">
+              <form class="login-form user-block-hidden  clearfix" action="https://echo.htmlacademy.ru" method="post">
+                <div class="label-wrapper">
+                  <input class="text-field valid" type="email" name="log-email">
+                  <label class="label-hint">Электронная почта</label>
+                </div>
+                <div class="label-wrapper">
+                  <input class="text-field valid" type="password" name="password">
+                  <label class="label-hint">Пароль</label>
+                </div>
+                <button class="btn" type="submit">Войти</button>
+                <div class="login-details-block">
+                  <a class="login-details black-general" href="#">Забыли пароль?</a>
+                  <a class="login-details black-general" href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
           </div>
           <div class="controls user-block-controls controls-cart cart-full">
             <span>2 товара</span>
-            <div class="user-block-hidden cart">
-              <table class="cart-entry">
-                <tr>
-                  <td><button class="cart-item-delete" type="button">Удалить</button></td>
-                  <td class="cart-item-img"><img src="img/cart-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td class="cart-item-name">Пломбир с апельсиновым джемом</td>
-                  <td class="cart-item-mass">1,5 кг х <span class="cart-item-price">200 руб.</span></td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td><button class="cart-item-delete" type="button">Удалить</button></td>
-                  <td class="cart-item-img"><img src="img/cart-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                  <td class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="cart-item-mass">1,5 кг х <span class="cart-item-price">300 руб.</span></td>
-                  <td>450 руб.</td>
-                </tr>
-              </table>
-              <span class="cart-final-price">Итого: 750 руб.</span>
-              <a class="btn order-btn" href="#">Оформить заказ</a>
+            <div class="wrap-user-block">
+              <div class="user-block-hidden cart clearfix">
+                <table class="cart-entry">
+                  <tr>
+                    <td><button class="cart-item-delete" type="button">Удалить</button></td>
+                    <td class="cart-item-img"><img src="img/cart-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                    <td class="cart-item-name">Пломбир с апельсиновым джемом</td>
+                    <td class="cart-item-mass">1,5 кг х <span class="cart-item-price">200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td><button class="cart-item-delete" type="button">Удалить</button></td>
+                    <td class="cart-item-img"><img src="img/cart-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                    <td class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="cart-item-mass">1,5 кг х <span class="cart-item-price">300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <span class="cart-final-price">Итого: 750 руб.</span>
+                <a class="btn order-btn" href="#">Оформить заказ</a>
+              </div>
             </div>
           </div>
         </div>
